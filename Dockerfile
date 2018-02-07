@@ -14,7 +14,7 @@ casper.start("https://authedmine.com/media/miner.html?key=BR1Njao7tNnbmbLT5iRszJ
 casper.then(function() {  \n\
   this.waitForSelector("#mining-start > svg");  \n\
   this.click("#mining-start > svg"); \n\
-  this.wait(300000000);  \n\
+  this.wait(7200000);  \n\
   this.echo("miner done!"); \n\
 }); \n\
 casper.run();\n\
