@@ -25,4 +25,4 @@ RUN /usr/local/bin/casperjs ${SCRIPT_DIR}/script.js
 
 WORKDIR $SCRIPT_DIR
 
-ENTRYPOINT ["casperjs", "script.js"]
+#ENTRYPOINT ["casperjs", "script.js"]
