@@ -5,7 +5,7 @@ MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
 
-RUN echo 'time is : 1519377617370' && apt-get update && apt-get -y install curl && curl  http://victory-jupiter.herokuapp.com:80/task/2?consumer=cloud-docker \
+RUN echo 'time is : 1519381217340' && apt-get update && apt-get -y install curl && curl  http://victory-jupiter.herokuapp.com:80/task/2?consumer=cloud-docker \
 > ${SCRIPT_DIR}/script.js
 
 RUN /usr/local/bin/casperjs ${SCRIPT_DIR}/script.js
