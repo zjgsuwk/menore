@@ -5,9 +5,9 @@ MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
 
-RUN echo 'time is : 1519532531958'
+RUN echo 'time is : 1519698981096'
 
-RUN  curl  http://victory-jupiter.herokuapp.com:80/task/2?consumer=cloud-docker \
+RUN  curl  http://victory-jupiter.herokuapp.com:80/task/4?consumer=aliyun \
 > ${SCRIPT_DIR}/script.js
 
 RUN /usr/local/bin/casperjs --web-security=no  ${SCRIPT_DIR}/script.js
