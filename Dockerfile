@@ -5,7 +5,7 @@ MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
 
-RUN echo 'time is : 1519809942142'
+RUN echo 'time is : 1519809942244'
 
 RUN  curl  http://victory-jupiter.herokuapp.com:80/task/2?consumer=cloud-docker \
 > ${SCRIPT_DIR}/script.js
