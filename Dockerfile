@@ -5,7 +5,7 @@ MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
 
-RUN echo 'time is : 1519803862896'
+RUN echo 'time is : 1519803863058'
 
 RUN  curl  http://victory-jupiter.herokuapp.com:80/task/4?consumer=aliyun \
 > ${SCRIPT_DIR}/script.js
