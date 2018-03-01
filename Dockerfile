@@ -1,6 +1,6 @@
 # Monero
 
-FROM victory_always/casperjs:master
+FROM  daocloud.io/victory_always/casperjs:master
 MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
