@@ -1,6 +1,6 @@
 # Monero
 
-FROM casperjs:master
+FROM victory_always/casperjs:master
 MAINTAINER zjgsuwk
 
 ENV SCRIPT_DIR=/home
